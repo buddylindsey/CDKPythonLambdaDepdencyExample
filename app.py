@@ -2,10 +2,10 @@
 
 from aws_cdk import core
 
-from anothertest.anothertest_stack import AnothertestStack
+from stacks.main_stack import MainStack
 
 
 app = core.App()
-AnothertestStack(app, "anothertest")
+MainStack(app, "CDKPythonLambdaDepdencyExample")
 
 app.synth()
